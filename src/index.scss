@@ -1,0 +1,90 @@
+$background-overlay-light: rgba(19, 29, 40, 0.8);
+$background-overlay-dark: rgba(144, 151, 159, 0.8);
+$primary-50: #e7efff;
+$primary-100: #c4d7fe;
+$primary-200: #9cbcfe;
+$primary-300: #74a1fd;
+$primary-400: #578cfc;
+$primary-500: #3978fc;
+$primary-600: #3370fc;
+$primary-700: #2c65fb;
+$primary-800: #245bfb;
+$primary-900: #1748fa;
+$primary-a-100: #ffffff;
+$primary-a-200: #f7f9ff;
+$primary-a-400: #c4cfff;
+$primary-a-700: #abbaff;
+$secondary-50: #e4e6e8;
+$secondary-100: #bcc1c5;
+$secondary-200: #90979f;
+$secondary-300: #636d78;
+$secondary-400: #414e5b;
+$secondary-500: #202f3e;
+$secondary-600: #1c2a38;
+$secondary-700: #182330;
+$secondary-800: #131d28;
+$secondary-900: #0b121b;
+$secondary-a-100: #74a1fd;
+$secondary-a-200: #3978fc;
+$secondary-a-400: #245bfb;
+$secondary-a-700: #0050dc;
+$system-green-100: #c8f1d6;
+$system-green-200: #a4e7bb;
+$system-green-300: #80dda0;
+$system-green-400: #64d68b;
+$system-green-500: #49cf77;
+$error-100: #ffc4c1;
+$error-200: #ff9d98;
+$error-300: #ff766e;
+$error-400: #ff584f;
+$error-500: #ff3b30;
+$information: #fdb0ff;
+$highlight: #fffdc1;
+
+// _theme_dark.scss:
+
+html[data-theme='dark'] {
+  --color-background-info: #{$primary-500};
+  --tertiary-elements: #{$background-overlay-dark};
+  --main-elements: #{$primary-300};
+  --secondary-elements: #{$primary-a-100};
+  --input-elements: #{$secondary-200};
+  --disabled-elements: #{$secondary-300};
+  --field-border: #{$secondary-200};
+  --main-text: #{$primary-a-100};
+  --secondary-text: #{$secondary-200};
+  --caption: #{$secondary-100};
+  --main-background: #{$secondary-500};
+  --secondary-background: #{$secondary-800};
+  --incoming-background: #{$secondary-400};
+  --outgoing-background: #{$primary-500};
+  --dropdown-background: #{$secondary-400};
+  --chat-input: #{$secondary-800};
+  --divider: #{$secondary-400};
+  --error: #{$error-300};
+  --hightlight: #{$highlight};
+}
+
+// _theme_light.scss:
+:root {
+  --color-background-info: #{$primary-100};
+  --tertiary-elements: #{$secondary-300};
+  --main-elements: #{$primary-500};
+  --secondary-elements: #{$secondary-500};
+  --input-elements: #{$secondary-500};
+  --disabled-elements: #{$secondary-100};
+  --field-border: #{$secondary-200};
+  --main-text: #{$secondary-900};
+  --secondary-text: #{$secondary-300};
+  --caption: #{$secondary-200};
+  --main-background: #{$primary-a-100};
+  --secondary-background: #{$primary-a-100};
+  --secondary-background-modal: #{$background-overlay-light};
+  --incoming-background: #{$secondary-50};
+  --outgoing-background: #{$primary-50};
+  --dropdown-background: #{$primary-a-100};
+  --chat-input: #{$primary-a-200};
+  --divider: #{$primary-50};
+  --error: #{$error-500};
+  --hightlight: #{$highlight};
+}
